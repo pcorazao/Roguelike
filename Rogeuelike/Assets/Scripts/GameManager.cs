@@ -1,24 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Completed
-{
+
 	using System.Collections.Generic;		//Allows us to use Lists. 
 	using UnityEngine.UI;					//Allows us to use UI.
 	
 	public class GameManager : MonoBehaviour
 	{
-		/*
-		public float levelStartDelay = 2f;						//Time to wait before starting level, in seconds.
-		public float turnDelay = 0.1f;							//Delay between each Player turn.
-		public int playerFoodPoints = 100;						//Starting value for Player food points.
+
+//		public float levelStartDelay = 2f;						//Time to wait before starting level, in seconds.
+//		public float turnDelay = 0.1f;							//Delay between each Player turn.
+//		public int playerFoodPoints = 100;						//Starting value for Player food points.
 		public static GameManager instance = null;				//Static instance of GameManager which allows it to be accessed by any other script.
-		[HideInInspector] public bool playersTurn = true;		//Boolean to check if it's players turn, hidden in inspector but public.
-		
-		
-		private Text levelText;									//Text to display current level number.
-		private GameObject levelImage;							//Image to block out level as levels are being set up, background for levelText.
-		*/
+//		[HideInInspector] public bool playersTurn = true;		//Boolean to check if it's players turn, hidden in inspector but public.
+//		
+//		
+//		private Text levelText;									//Text to display current level number.
+//		private GameObject levelImage;							//Image to block out level as levels are being set up, background for levelText.
+
 		private BoardManager boardScript;						//Store a reference to our BoardManager which will set up the level.
 
 		private int level = 3;									//Current level number, expressed in game as "Day 1".
@@ -32,7 +31,7 @@ namespace Completed
 		//Awake is always called before any Start functions
 		void Awake()
 		{
-			/*
+
 			//Check if instance already exists
 			if (instance == null)
 				
@@ -49,8 +48,8 @@ namespace Completed
 			DontDestroyOnLoad(gameObject);
 			
 			//Assign enemies to a new List of Enemy objects.
-			enemies = new List<Enemy>();
-			*/
+			//enemies = new List<Enemy>();
+
 			
 			//Get a component reference to the attached BoardManager script
 			boardScript = GetComponent<BoardManager>();
@@ -175,5 +174,4 @@ namespace Completed
 //			enemiesMoving = false;
 //		}
 	}
-}
 

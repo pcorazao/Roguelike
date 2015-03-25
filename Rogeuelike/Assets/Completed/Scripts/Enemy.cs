@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿/*
+using UnityEngine;
 using System.Collections;
 
 namespace Completed
@@ -95,4 +96,4 @@ namespace Completed
 			SoundManager.instance.RandomizeSfx (attackSound1, attackSound2);
 		}
 	}
-}
+}*/
