@@ -10,9 +10,9 @@ using System.Collections;
 
 //		public float levelStartDelay = 2f;						//Time to wait before starting level, in seconds.
 //		public float turnDelay = 0.1f;							//Delay between each Player turn.
-//		public int playerFoodPoints = 100;						//Starting value for Player food points.
+		public int playerFoodPoints = 100;						//Starting value for Player food points.
 		public static GameManager instance = null;				//Static instance of GameManager which allows it to be accessed by any other script.
-//		[HideInInspector] public bool playersTurn = true;		//Boolean to check if it's players turn, hidden in inspector but public.
+    	[HideInInspector] public bool playersTurn = true;		//Boolean to check if it's players turn, hidden in inspector but public.
 //		
 //		
 //		private Text levelText;									//Text to display current level number.
@@ -130,8 +130,8 @@ using System.Collections;
 		
 		
 		//GameOver is called when the player reaches 0 food points
-//		public void GameOver()
-//		{
+		public void GameOver()
+		{
 //			//Set levelText to display number of levels passed and game over message
 //			levelText.text = "After " + level + " days, you starved.";
 //			
@@ -139,8 +139,8 @@ using System.Collections;
 //			levelImage.SetActive(true);
 //			
 //			//Disable this GameManager.
-//			enabled = false;
-//		}
+			enabled = false;
+		}
 		
 		//Coroutine to move enemies in sequence.
 //		IEnumerator MoveEnemies()
